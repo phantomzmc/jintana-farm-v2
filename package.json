@@ -14,5 +14,6 @@
   },
   "resolutions": {
     "webpack": "5.21.2"
-  }
+  },
+  "cacheDirectories": [".next/cache"]
 }
