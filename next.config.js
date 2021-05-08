@@ -4,9 +4,13 @@ module.exports = {
     future: {
         webpack5: true,
     },
-    webpack: function (config, options) {
-        console.log(options.webpack.version); // 4.44.1
-        config.experiments = {};
-        return config;
-    },
+    
+    webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+        // Note: we provide webpack above so you should not `require` it
+        // Perform customizations to webpack config
+        config.plugins.push(new webpack.IgnorePlugin(/\/__tests__\//))
+    
+        // Important: return the modified config
+        return config
+      },
 };
