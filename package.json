@@ -8,12 +8,24 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
+    "aos": "^2.3.4",
+    "glightbox": "^3.0.8",
+    "google-map-react": "^2.1.9",
+    "isotope-layout": "^3.0.6",
+    "mapbox-gl": "^2.2.0",
     "next": "10.2.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-mapbox-gl": "^5.1.1",
+    "react-messenger-customer-chat": "^0.8.0",
+    "reactstrap": "^8.9.0",
+    "swiper": "^6.5.9",
+    "web-vitals": "^1.1.1"
   },
   "resolutions": {
     "webpack": "5.21.2"
   },
-  "cacheDirectories": [".next/cache"]
+  "cacheDirectories": [
+    ".next/cache"
+  ]
 }

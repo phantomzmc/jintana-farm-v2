@@ -119,3 +119,24 @@
     flex-direction: column;
   }
 }
+
+.section {
+  overflow: hidden;
+}
+
+/* Sections Header
+--------------------------------*/
+.sectionHeader .sectionTitle {
+  font-size: 32px;
+  color: #111;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.sectionHeader .sectionDescription {
+  text-align: center;
+  padding-bottom: 40px;
+  color: #999;
+}

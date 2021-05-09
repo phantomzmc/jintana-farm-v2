@@ -4,6 +4,9 @@ module.exports = {
     future: {
         webpack5: true,
     },
+    images: {
+        domains: ['jintana-orange-farm.s3-ap-southeast-1.amazonaws.com'],
+    },
     
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
         // Note: we provide webpack above so you should not `require` it
