@@ -27,7 +27,7 @@
     border-radius: 4px;
   }
   
-  .portfolio .portfolioFlters li:hover, .portfolio .portfolioFlters li.filter-active {
+  .portfolio .portfolioFlters li:hover, .portfolio .portfolioFlters li.filterActive {
     color: #fff;
     background: #FF7F50	;
   }
@@ -35,28 +35,47 @@
   .portfolio .portfolioFlters li:last-child {
     margin-right: 0;
   }
+  .grid {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin-top: 3rem;
+  }
   
-  .portfolio .portfolioItem {
+  .card {
+    margin: 1rem;
+    padding: 1.5rem;
+    text-align: left;
+    color: inherit;
+    text-decoration: none;
+    border: 1px solid #eaeaea;
+    border-radius: 10px;
+    transition: color 0.15s ease, border-color 0.15s ease;
+  }
+  
+.portfolioItem {
     max-height: 300px;
     margin-bottom: 30px;
     overflow: hidden;
   }
   
-  .portfolio .portfolioItem img {
+.portfolioItem img {
     position: relative;
     width: 100%;
     top: 0;
     transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
 
-  .portfolio .portfolioItem Image {
+.portfolioItem Image {
     position: relative;
     width: 100%;
     top: 0;
     transition: all 0.6s cubic-bezier(0.645, 0.045, 0.355, 1);
   }
   
-  .portfolio .portfolioItem .portfolioInfo {
+  .portfolioInfo {
     opacity: 0;
     position: absolute;
     left: 12px;
@@ -68,19 +87,19 @@
     padding: 15px 20px;
   }
   
-  .portfolio .portfolioItem .portfolioInfo h4 {
+  .portfolioInfo h4 {
     font-size: 18px;
     color: #fff;
     font-weight: 600;
   }
   
-  .portfolio .portfolioItem .portfolioInfo p {
+  .portfolioInfo p {
     color: #fff;
     font-size: 14px;
     margin-bottom: 0;
   }
   
-  .portfolio .portfolioItem .portfolioInfo .previewLink, .portfolio .portfolioItem .portfolioInfo .detailsLink {
+  .portfolioInfo .previewLink, .portfolio .portfolioItem .portfolioInfo .detailsLink {
     position: absolute;
     right: 50px;
     font-size: 24px;
@@ -89,11 +108,10 @@
     transition: ease-in-out 0.3s;
   }
   
-  .portfolio .portfolioItem .portfolioInfo .previewLink:hover, .portfolio .portfolioItem .portfolioInfo .detailsLink:hover {
+  .portfolioInfo .previewLink:hover, .portfolio .portfolioItem .portfolioInfo .detailsLink:hover {
     color: #a4ebd4;
   }
-  
-  .portfolio .portfolioItem .portfolioInfo .detailsLink {
+  .portfolioInfo .detailsLink {
     right: 15px;
   }
   

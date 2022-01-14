@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Hero from "./component/hero";
 import Product from './component/product';
+import Header from './component/header';
 
 export default function Home() {
   return (
@@ -57,6 +58,7 @@ export default function Home() {
 
       </Head>
       <main>
+        <Header />
         <Hero />
         <Product />
       </main>
